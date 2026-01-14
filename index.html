@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisey Pockets </title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- SECURITY HEADERS -->
+    <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self';
+               img-src 'self' https://images.unsplash.com data:;
+               script-src 'self';
+               style-src 'self';
+               connect-src 'self';
+               frame-ancestors 'none';
+               form-action 'self';">
+
+
+</head>
+<body> 
+
+<header class="hero">
+    <nav>
+        <div class="logo-wrap">
+            <img src="images/thefam.webp" class="logo" alt="Wisey Pockets Logo">
+            <h1>Wisey Pockets</h1>
+        </div>
+
+        <button class="menu-btn" onclick="toggleMenu()" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#products">Products</a>
+            <a href="#loyalty">Rewards</a>
+            <a href="#contact">Contact</a>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+        </div>
+    </nav>
+
+    <div class="hero-content">
+        <h2>Turn Everyday Spending Into Food Security</h2>
+        <p>Earn food backup, loyalty rewards and post-funeral food support for your family.</p>
+        <button onclick="openWhatsApp()" class="cta">Join WiseyWallet</button>
+    </div>
+</header>
+
+<main>
+<section id="products" class="section">
+    <h3>Our Products</h3>
+    <div class="grid">
+        <div class="card">
+            <img src="images/groceries.jpeg">
+            <h4>Food Backup Pocket</h4>
+            <p>Save grocery vouchers every month.</p>
+        </div>
+        <div class="card">
+            <img src="images/wallet.jpg" >
+            <h4>Legacy Food E-Wallet</h4>
+            <p>24-month post-funeral food assistance.</p>
+        </div>
+        <div class="card">
+            <img src="images/FOOD.jpg">
+            <h4>Everyday Payments</h4>
+            <p>Airtime, electricity & bills powered by Flash.</p>
+        </div>
+    </div>
+</section>
+
+<section id="loyalty" class="section light-bg">
+    <h3>Loyalty & Rewards</h3>
+    <p>Qualify for a <strong>R6,000 grocery voucher reward</strong> after 12 months of loyalty.</p>
+    <button onclick="openWhatsApp()" class="cta secondary">Check Eligibility</button>
+</section>
+
+<section id="contact" class="section">
+    <h3>Contact Us</h3>
+    <button onclick="openWhatsApp()" class="cta full">WhatsApp Us</button>
+    <button onclick="openEmail()" class="cta secondary full">Email Us</button>
+     <button onclick="openCall()" class="cta secondary full">Call Us</button>
+
+    </main>
+
+<footer>
+    <p>© 2026 Wisey Holdings Pty Ltd. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
