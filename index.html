@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wisey Pockets </title>
+    <title>WiseyPocket - Your Grocery Guardian</title>
     <link rel="stylesheet" href="styles.css">
 
     <!-- SECURITY HEADERS -->
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
-               img-src 'self' https://images.unsplash.com data:;
+               img-src 'self' https://images.unsplash.com https://media.portmoni.com data:;
                script-src 'self';
                style-src 'self';
                connect-src 'self';
                frame-ancestors 'none';
                form-action 'self';">
-
 
 </head>
 <body> 
@@ -23,65 +22,161 @@
 <header class="hero">
     <nav>
         <div class="logo-wrap">
-            <img src="images/thefam.webp" class="logo" alt="Wisey Pockets Logo">
-            <h1>Wisey Pockets</h1>
+            <img src="images/thefam.webp" class="logo" alt="WiseyPocket Logo">
+            <h1>WiseyPocket</h1>
         </div>
 
         <button class="menu-btn" onclick="toggleMenu()" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">☰</button>
 
         <div class="nav-links" id="navLinks">
+            <a href="#services">Services</a>
             <a href="#products">Products</a>
-            <a href="#loyalty">Rewards</a>
+            <a href="#about">About</a>
             <a href="#contact">Contact</a>
             <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
         </div>
     </nav>
 
     <div class="hero-content">
-        <h2>Turn Everyday Spending Into Food Security</h2>
-        <p>Earn food backup, loyalty rewards and post-funeral food support for your family.</p>
-        <button onclick="openWhatsApp()" class="cta">Join WiseyWallet</button>
+        <h2>Your Grocery Guardian</h2>
+        <p>Food Security Programmes</p>
+        <button onclick="openWhatsApp()" class="cta">Join Us</button>
     </div>
 </header>
 
 <main>
-<section id="products" class="section">
-    <h3>Our Products</h3>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="section">
+    <h3>Our Services</h3>
     <div class="grid">
         <div class="card">
-            <img src="images/groceries.jpeg">
-            <h4>Food Backup Pocket</h4>
-            <p>Save grocery vouchers every month.</p>
+            <img src="https://media.portmoni.com/resized/111369/ChatGPT_Image_Jan_12_2026_12_20_24_AM-thumbnail-600x600.png" alt="Legacy Pocket">
+            <h4>Wisey Legacy Pocket</h4>
+            <p>A post-funeral food assistance programme designed to support families after the death of a registered family member. Provides 24 months of food security to help ease the burden during difficult times.</p>
+            <a href="#" class="cta secondary">Read More</a>
         </div>
         <div class="card">
-            <img src="images/wallet.jpg" >
-            <h4>Legacy Food E-Wallet</h4>
-            <p>24-month post-funeral food assistance.</p>
+            <img src="https://media.portmoni.com/resized/111369/ChatGPT_Image_Jan_12_2026_12_25_35_AM-thumbnail-600x600.png" alt="Backup Pocket">
+            <h4>Wisey Backup Pocket</h4>
+            <p>A flexible food and essentials support pocket designed to help individuals and families prepare for unexpected shortfalls. Build your safety net with regular contributions and earn rewards.</p>
+            <a href="#" class="cta secondary">Read More</a>
         </div>
         <div class="card">
-            <img src="images/FOOD.jpg">
-            <h4>Everyday Payments</h4>
-            <p>Airtime, electricity & bills powered by Flash.</p>
+            <img src="https://media.portmoni.com/resized/111369/ChatGPT_Image_Jan_13_2026_11_54_16_AM-thumbnail-600x600.png" alt="January Pocket">
+            <h4>Wisey January Pocket</h4>
+            <p>Wisey January Vouchers are designed to help you start the year prepared and stress-free. By contributing a minimum of R100 per month, you'll earn 4% back into your Wisey backup wallet.</p>
+            <a href="#" class="cta secondary">Read More</a>
+        </div>
+        <div class="card">
+            <img src="https://media.portmoni.com/resized/111369/ChatGPT_Image_Jan_15_2026_02_29_35_PM-thumbnail-600x600.png" alt="Rent Pocket">
+            <h4>Wisey Rent Pocket</h4>
+            <p>A dedicated savings programme for managing rental payments. Contribute regularly and build a secure fund for your housing needs, with added benefits and flexible withdrawal options.</p>
+            <a href="#" class="cta secondary">Read More</a>
         </div>
     </div>
 </section>
 
-<section id="loyalty" class="section light-bg">
-    <h3>Loyalty & Rewards</h3>
-    <p>Qualify for a <strong>R6,000 grocery voucher reward</strong> after 12 months of loyalty.</p>
-    <button onclick="openWhatsApp()" class="cta secondary">Check Eligibility</button>
+<!-- PRODUCTS SECTION -->
+<section id="products" class="section light-bg">
+    <h3>Our Products</h3>
+    <div class="grid">
+        <div class="product-card voucher-card">
+            <div class="voucher-wrapper">
+                <img src="https://media.portmoni.com/resized/111369/ChatGPT_Image_Jan_14_2026_12_40_30_PM-thumbnail-600x600.png" alt="Legacy Voucher">
+                <div class="voucher-badge">Legacy Voucher</div>
+            </div>
+            <h4>Wisey Legacy Voucher</h4>
+            <p>Wisey Legacy Pocket is a compassionate post-funeral food assistance programme designed to support families during one of life's most difficult moments.</p>
+            <div class="product-footer">
+                <a href="#" class="cta secondary">Read More</a>
+                <a href="#" class="cta secondary">Select Options</a>
+            </div>
+        </div>
+        <div class="product-card voucher-card">
+            <div class="voucher-wrapper">
+                <img src="https://media.portmoni.com/resized/111369/ChatGPT_Image_Jan_14_2026_05_27_58_PM-thumbnail-600x600.png" alt="Backup Pocket">
+                <div class="voucher-badge">Backup Voucher</div>
+            </div>
+            <h4>Wisey BackUp Pocket</h4>
+            <p>Voucher Saving Pocket. The Wisey BackUp Pocket is a voucher saving pocket designed to help families secure food for bad days and special occasions.</p>
+            <div class="product-footer">
+                <span class="price">R 50</span>
+                <a href="#" class="cta secondary">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-card voucher-card">
+            <div class="voucher-wrapper">
+                <img src="https://media.portmoni.com/resized/111369/ChatGPT_Image_Jan_15_2026_12_32_37_PM-thumbnail-600x600.png" alt="January Vouchers">
+                <div class="voucher-badge">January Voucher</div>
+            </div>
+            <h4>Wisey January Vouchers</h4>
+            <p>These Vouchers come in denominations of R200 and are only cashable from the 31st of December to the 5th of January. You earn 4% back into your Wisey backup wallet.</p>
+            <div class="product-footer">
+                <span class="price">R 200</span>
+                <a href="#" class="cta secondary">Add to Cart</a>
+            </div>
+        </div>
+    </div>
 </section>
 
+<!-- PAYMENT OPTIONS SECTION -->
+<section class="section">
+    <h3>Payment Options</h3>
+    <div class="grid payment-grid">
+        <div class="payment-card">
+            <h4>Bank Transfer / Deposit</h4>
+            <p>Secure bank transfers available for all transactions.</p>
+        </div>
+        <div class="payment-card">
+            <h4>Mobile Money</h4>
+            <p>Easy and convenient mobile payment solutions.</p>
+        </div>
+        <div class="payment-card">
+            <h4>Voucher Purchase</h4>
+            <p>Direct voucher purchasing options available.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="section light-bg">
+    <h3>About Us</h3>
+    <p>WiseyPocket is committed to providing innovative food security programmes that help families and individuals prepare for life's unexpected challenges. We believe everyone deserves access to reliable food assistance, whether for daily needs, emergency situations, or life transitions.</p>
+    <p>Our mission is to empower communities through accessible savings and support programmes that create lasting food security for all.</p>
+    <a href="#" class="cta secondary">Read More</a>
+</section>
+
+<!-- CONTACT SECTION -->
 <section id="contact" class="section">
     <h3>Contact Us</h3>
+    <p><strong>Email:</strong> <a href="mailto:wiseypocket@gmail.com">wiseypocket@gmail.com</a></p>
+    <p><strong>Address:</strong> South Africa</p>
+    
+    <h4>Get In Touch</h4>
     <button onclick="openWhatsApp()" class="cta full">WhatsApp Us</button>
     <button onclick="openEmail()" class="cta secondary full">Email Us</button>
-     <button onclick="openCall()" class="cta secondary full">Call Us</button>
+    <button onclick="openCall()" class="cta secondary full">Call Us</button>
+    
+    <h4>Follow Us</h4>
+    <div class="social-links">
+        <a href="https://facebook.com/" target="_blank">Facebook</a>
+        <a href="https://instagram.com/" target="_blank">Instagram</a>
+        <a href="https://youtube.com/" target="_blank">YouTube</a>
+    </div>
 
-    </main>
+    <h4>Join Our Mailing List</h4>
+    <div class="newsletter">
+        <input type="email" placeholder="Enter your email" aria-label="Email for newsletter">
+        <button class="cta secondary">Subscribe</button>
+    </div>
+</section>
+
+</main>
 
 <footer>
-    <p>© 2026 Wisey Holdings Pty Ltd. All Rights Reserved.</p>
+    <p>© 2026 WiseyPocket. All Rights Reserved.</p>
+    <p><a href="#">Home</a> · <a href="#contact">Contact</a></p>
 </footer>
 
 <script src="script.js"></script>

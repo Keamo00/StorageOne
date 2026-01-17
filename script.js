@@ -8,11 +8,15 @@ function toggleMenu() {
 }
 
 function openWhatsApp() {
-    window.open("https://wa.me/27XXXXXXXXX", "_blank");
+    window.open("https://wa.me/27812379075", "_blank");
 }
 
 function openEmail() {
-    window.location.href = "mailto:info@wiseywallet.com";
+    window.location.href = "mailto:wiseypocket@gmail.com";
+}
+
+function openCall() {
+    window.location.href = "tel:+27812379075";
 }
 
 /* THEME LOGIC */
